@@ -11,7 +11,7 @@ namespace Calculator
 
         private static void Main(string[] args)
         {
-            if (args != null)
+            if (args != Array.Empty<string>())
             {
                 Console.WriteLine("Arguments given: " + args);
             }
