@@ -10,13 +10,37 @@ namespace Calculator
         private static decimal result;
 
         private static void Main(string[] args)
-        {         
+        {
             Console.Write("Enter the first number: ");
-            firstNumber = Convert.ToDecimal(Console.ReadLine());
+            while (true)
+            {
+                try
+                {
+                    firstNumber = Convert.ToDecimal(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Something went wrong.(probably you entered an invalid number) Please try again.");
+                    continue;
+                }
+                break;
+            }
             Console.Write("Enter the operator number (1 for +, 2 for -, 3 for ×, 4 for ÷ and 5 for %.): ");
             while (true)
             {
-                Operator = Convert.ToInt32(Console.ReadLine());
+                while (true)
+                {
+                    try
+                    {
+                        Operator = Convert.ToInt32(Console.ReadLine());
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Something went wrong.(probably you entered an invalid number) Please try again.");
+                        continue;
+                    }
+                    break;
+                }
                 if (!(Operator > 5 || Operator < 1))
                 {
                     break;
@@ -27,7 +51,19 @@ namespace Calculator
                 }
             }
             Console.Write("Enter the second number: ");
-            secondNumber = Convert.ToDecimal(Console.ReadLine());
+            while (true)
+            {
+                try
+                {
+                    secondNumber = Convert.ToDecimal(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Something went wrong.(probably you entered an invalid number) Please try again.");
+                    continue;
+                }
+                break;
+            }
             Console.WriteLine("Calculating...");
             result = Operator switch
             {
