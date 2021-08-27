@@ -12,7 +12,7 @@ namespace Calculator
         private static void Main(string[] args)
         {         
             Console.Write("Enter the first number: ");
-            firstNumber = Convert.ToInt32(Console.ReadLine());
+            firstNumber = Convert.ToDecimal(Console.ReadLine());
             Console.Write("Enter the operator number (1 for +, 2 for -, 3 for ×, 4 for ÷ and 5 for %.): ");
             while (true)
             {
@@ -27,7 +27,7 @@ namespace Calculator
                 }
             }
             Console.Write("Enter the second number: ");
-            secondNumber = Convert.ToInt32(Console.ReadLine());
+            secondNumber = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("Calculating...");
             result = Operator switch
             {
