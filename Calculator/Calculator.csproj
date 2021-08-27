@@ -5,4 +5,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="RandomStuff">
+      <HintPath>..\..\..\..\OneDrive\Programování\C#\Knihovny tříd\RandomStuff.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
