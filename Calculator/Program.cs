@@ -11,6 +11,11 @@ namespace Calculator
 
         private static void Main(string[] args)
         {
+            if (args != null)
+            {
+                Console.WriteLine("Arguments given: " + args);
+            }
+            
             Console.Write("Enter the first number: ");
             firstNumber = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the operator number (1 for +, 2 for -, 3 for ×, 4 for ÷ and 5 for %.): ");
