@@ -12,11 +12,11 @@ namespace Calculator
         {
             Console.Write("Enter the first number: ");
             firstNumber = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the operator number (1 for +, 2 for -, 3 for ×, 4 for ÷): ");
+            Console.Write("Enter the operator number (1 for +, 2 for -, 3 for ×, 4 for ÷ and 5 for %.): ");
             while (true)
             {
                 Operator = Convert.ToInt32(Console.ReadLine());
-                if (!(Operator > 4 || Operator < 1))
+                if (!(Operator > 5 || Operator < 1))
                 {
                     break;
                 }
@@ -41,6 +41,9 @@ namespace Calculator
                     break;
                 case 4:
                     result = firstNumber / secondNumber;
+                    break;
+                case 5:
+                    result = firstNumber % secondNumber;
                     break;
                 default:
                     result = 0;
