@@ -28,27 +28,15 @@ namespace Calculator
             Console.Write("Enter the second number: ");
             secondNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Calculating...");
-            switch (Operator)
+            result = Operator switch
             {
-                case 1:
-                    result = firstNumber + secondNumber;
-                    break;
-                case 2:
-                    result = firstNumber - secondNumber;
-                    break;
-                case 3:
-                    result = firstNumber * secondNumber;
-                    break;
-                case 4:
-                    result = firstNumber / secondNumber;
-                    break;
-                case 5:
-                    result = firstNumber % secondNumber;
-                    break;
-                default:
-                    result = 0;
-                    break;
-            }
+                1 => firstNumber + secondNumber,
+                2 => firstNumber - secondNumber,
+                3 => firstNumber * secondNumber,
+                4 => firstNumber / secondNumber,
+                5 => firstNumber % secondNumber,
+                _ => 0,
+            };
             Console.WriteLine("Result: " + result);
             Console.ReadKey();
         }
