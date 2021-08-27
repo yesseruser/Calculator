@@ -2,13 +2,14 @@
 
 namespace Calculator
 {
-    class Program
+    internal class Program
     {
-        static int firstNumber;
-        static int Operator;
-        static int secondNumber;
-        static int result;
-        static void Main(string[] args)
+        private static int firstNumber;
+        private static int Operator;
+        private static int secondNumber;
+        private static int result;
+
+        private static void Main(string[] args)
         {
             Console.Write("Enter the first number: ");
             firstNumber = Convert.ToInt32(Console.ReadLine());
