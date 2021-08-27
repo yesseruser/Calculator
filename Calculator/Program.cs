@@ -11,7 +11,7 @@ namespace Calculator
 
         private static void Main(string[] args)
         {
-            
+            Console.WriteLine("Calculator. Use , for decimal numbers.");
             Console.Write("Enter the first number: ");
             while (true)
             {
