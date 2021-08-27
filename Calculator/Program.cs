@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    internal class Program
+    internal static class Program
     {
         private static decimal firstNumber;
         private static int Operator;
@@ -11,6 +11,7 @@ namespace Calculator
 
         private static void Main(string[] args)
         {
+            
             Console.Write("Enter the first number: ");
             while (true)
             {
