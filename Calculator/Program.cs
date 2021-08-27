@@ -4,10 +4,10 @@ namespace Calculator
 {
     internal class Program
     {
-        private static int firstNumber;
+        private static decimal firstNumber;
         private static int Operator;
-        private static int secondNumber;
-        private static int result;
+        private static decimal secondNumber;
+        private static decimal result;
 
         private static void Main(string[] args)
         {         
