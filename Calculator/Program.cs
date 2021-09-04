@@ -26,7 +26,7 @@ namespace Calculator
                 }
                 break;
             }
-            Console.Write("Enter the operator number (1 for +, 2 for -, 3 for ×, 4 for ÷ and 5 for %.): ");
+            Console.Write("Enter the operator number (1 for +, 2 for -, 3 for ×, 4 for ÷ and 5 for %(divide remainder).): ");
             while (true)
             {
                 while (true)
